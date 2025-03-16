@@ -1,9 +1,10 @@
 package handler
 
 import (
-	"github.com/gin-gonic/gin"
+	"github.com/labstack/echo/v4"
 )
 
-func (h *Handler) logIn(c *gin.Context) {
+func (h *Handler) logIn(c echo.Context) error {
 
+	return echo.ErrConflict
 }

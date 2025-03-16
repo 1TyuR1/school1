@@ -1,14 +1,12 @@
 package handler
 
-import (
-	"github.com/gin-gonic/gin"
-)
+import "github.com/labstack/echo/v4"
 
 type Handler struct {
 }
 
-func (h *Handler) InitRoutes() *gin.Engine {
-	router := gin.New()
+func (h *Handler) InitRoutes() *echo.Echo {
+	router := echo.New()
 
 	auth := router.Group("/auth")
 	{
